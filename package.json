@@ -1,0 +1,22 @@
+{
+  "name": "moo-interpreter",
+  "version": "1.0.0",
+  "description": "Interprets .cow files",
+  "main": "dist/cli.js",
+  "scripts": {
+    "start": "npm run build && node dist/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "William Qi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "command-line-args": "^5.2.1"
+  }
+}
