@@ -1,3 +1,5 @@
+import { MooCode, MooInstruction } from "./code";
+
 export class MooEnvironment {
   private memory: number[];
   private memoryCapacity: number;
@@ -15,7 +17,14 @@ export class MooEnvironment {
   }
 
   run(code: string) {
+    const exec = new MooCode(code);
 
+    let instruction = exec.next();
+    do {
+      switch (instruction) {
+
+      }
+    } while ((instruction = exec.next()) !== MooInstruction.END_PROGRAM);
   }
 
 }
