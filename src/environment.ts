@@ -22,7 +22,7 @@ export class MooEnvironment {
     let instruction = exec.next();
     do {
       switch (instruction) {
-
+        
       }
     } while ((instruction = exec.next()) !== MooInstruction.END_PROGRAM);
   }
