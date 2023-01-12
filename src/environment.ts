@@ -1,5 +1,6 @@
 import { EventEmitter } from "stream";
-import { intToMooInstruction, MooCode, MooInstruction } from "./code";
+import { MooCode, MooInstruction } from "./code";
+import { intToMooInstruction } from "./utils";
 
 export class MooEnvironment extends EventEmitter {
   private memory: number[];
