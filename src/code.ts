@@ -72,12 +72,20 @@ export class MooCode {
     return instruction;
   }
 
+  peek(): MooInstruction {
+    return this.instructions[this.getLine()];
+  }
+
   /**
    * Retrieve the current line number
    * @returns the current line number
    */
   getLine() {
     return this.lineNumber;
+  }
+
+  getInstruction(line: number) {
+    return this.instructions[line];
   }
 
   /**

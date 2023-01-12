@@ -26,3 +26,10 @@ const code = fs.readFileSync(options.file, "utf8");
 
 const env = new MooEnvironment(memory);
 env.run(code);
+
+let str = "";
+env.on("data", data => {
+  str += data;
+});
+
+env.on("end", () => console.log(str));
